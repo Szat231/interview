@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 public class ReveresAndAddTest {
     @Test
-    public void reveresAndAddTest_nullGiven_throwIllegalArgumentExeptions(){
+    public void reveresAndAddTest_nullGiven_throwIllegalArgumentExeptions() {
 
         //given
         ReversAndAdd revers = new ReversAndAdd();
@@ -14,7 +14,7 @@ public class ReveresAndAddTest {
         //then
         Assertions.assertThrows(
                 IllegalArgumentException.class,
-                ()-> revers.reversAndAdd(Long.parseLong(digits))
+                () -> revers.reversAndAdd(Long.parseLong(digits))
         );
     }
 
@@ -33,20 +33,21 @@ public class ReveresAndAddTest {
         );
 
     }
-        @Test
-        public void reveresAndAddTest_palindromNotFound_false(){
 
-            //given
-            ReversAndAdd revers = new ReversAndAdd();
-            String digits = "196";
-            //when
-            String result = String.valueOf(revers.reversAndAdd(Long.parseLong(digits)));
-            //then
-            Assertions.assertEquals( "0",result);
+    @Test
+    public void reveresAndAddTest_palindromNotFound_false() {
+
+        //given
+        ReversAndAdd revers = new ReversAndAdd();
+        String digits = "196";
+        //when
+        String result = String.valueOf(revers.reversAndAdd(Long.parseLong(digits)));
+        //then
+        Assertions.assertEquals("0", result);
     }
 
     @Test
-    public void reveresAndAddTest_palindromFound_true(){
+    public void reveresAndAddTest_palindromFound_true() {
 
         //given
         ReversAndAdd revers = new ReversAndAdd();
@@ -61,7 +62,7 @@ public class ReveresAndAddTest {
 
 
     @Test
-    public void reversTest_stringGiven_throwIllegalArgumentExeptions(){
+    public void reversTest_stringGiven_throwIllegalArgumentExeptions() {
 
         //given
         ReversAndAdd revers = new ReversAndAdd();

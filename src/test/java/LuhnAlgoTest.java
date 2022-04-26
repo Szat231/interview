@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 public class LuhnAlgoTest {
 
     @Test
-    public void checkLuhnAlgo_digitsNull_throwIllegalArgumentExeptions(){
+    public void checkLuhnAlgo_digitsNull_throwIllegalArgumentExeptions() {
 
         //given
         LuhnAlgo luhn = new LuhnAlgo();
@@ -15,12 +15,12 @@ public class LuhnAlgoTest {
         //then
         Assertions.assertThrows(
                 IllegalArgumentException.class,
-                ()-> luhn.checkLuhnAlgo(digits)
+                () -> luhn.checkLuhnAlgo(digits)
         );
     }
 
     @Test
-    public void checkLuhnAlgo_digitsChars_throwIllegalArgumentExeptions(){
+    public void checkLuhnAlgo_digitsChars_throwIllegalArgumentExeptions() {
 
         //given
         LuhnAlgo luhn = new LuhnAlgo();
@@ -31,12 +31,12 @@ public class LuhnAlgoTest {
         //then
         Assertions.assertThrows(
                 IllegalArgumentException.class,
-                ()-> luhn.checkLuhnAlgo(digits)
+                () -> luhn.checkLuhnAlgo(digits)
         );
     }
 
     @Test
-    public void checkLuhnAlgo_digitsTooShort_throwIllegalArgumentExeptions(){
+    public void checkLuhnAlgo_digitsTooShort_throwIllegalArgumentExeptions() {
 
         //given
         LuhnAlgo luhn = new LuhnAlgo();
@@ -47,12 +47,12 @@ public class LuhnAlgoTest {
         //then
         Assertions.assertThrows(
                 IllegalArgumentException.class,
-                ()-> luhn.checkLuhnAlgo(digits)
+                () -> luhn.checkLuhnAlgo(digits)
         );
     }
 
     @Test
-    public void checkLuhnAlgo_digitsTooLong_throwIllegalArgumentExeptions(){
+    public void checkLuhnAlgo_digitsTooLong_throwIllegalArgumentExeptions() {
 
         //given
         LuhnAlgo luhn = new LuhnAlgo();
@@ -63,12 +63,12 @@ public class LuhnAlgoTest {
         //then
         Assertions.assertThrows(
                 IllegalArgumentException.class,
-                ()-> luhn.checkLuhnAlgo(digits)
+                () -> luhn.checkLuhnAlgo(digits)
         );
     }
 
     @Test
-    public void checkLuhnAlgo_invalidCardNo_resultFalse(){
+    public void checkLuhnAlgo_invalidCardNo_resultFalse() {
 
         //given
         LuhnAlgo luhn = new LuhnAlgo();
@@ -82,7 +82,7 @@ public class LuhnAlgoTest {
     }
 
     @Test
-    public void checkLuhnAlgo_correctCardNo_resultTrue(){
+    public void checkLuhnAlgo_correctCardNo_resultTrue() {
 
         //given
         LuhnAlgo luhn = new LuhnAlgo();
